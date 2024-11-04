@@ -1,15 +1,11 @@
-let favColor = [];
+// Create an array to store colors
+let colors = ["black", "white", "gray"];
 
-function addColor() {
-    let color = prompt("Enter a color you like:");
-    if (color) {
-        favColor.push(color);
-        console.log("Updated favorite colors: ", favColor);
-    } else {
-        console.log("No color entered.");
-    }
-}
+// Print the initial array
+console.log("Your favorite colors are:", colors);
 
-for (let i = 0; i < 3; i++) {
-    addColor();
-}
+// Add a new color to the array
+colors.push("blue");
+
+// Print the updated array
+console.log("Updated favorite colors:", colors);
